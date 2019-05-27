@@ -3,10 +3,10 @@ DATA ENGINEER INTERN ASSIGNMENT
 
 [1] Requirements:
 
-BeautifulSoup
-Pandas
-Re
-Itertools
+BeautifulSoup,
+Pandas,
+Re,
+Itertools,
 Requests
 
 *Ideally Anaconda package installed*
