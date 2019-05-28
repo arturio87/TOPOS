@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[344]:
-
-
 from bs4 import BeautifulSoup
 import requests
 import pandas as pd
@@ -72,15 +69,9 @@ df['2018 ESTIMATE'] = df['2018 ESTIMATE'].str.replace(r"\D+", '', regex=True).as
 df['2010 CENSUS'] = df['2010 CENSUS'].str.replace(r"\D+", '', regex=True).astype('int64', errors='ignore')
 df.rename(columns={'2016 POPULATION DENSITY':'2016 POPULATION DENSITY PER SQ MI', '2016 LAND AREA':'2016 LAND AREA SQ MI'}, inplace = True)
 
-
-# In[327]:
-
-
+#Directory for the output file
 path = str(input("Enter the directory, for example: /users/username/Desktop/filename.csv"))
 
-
-# In[346]:
-
-
+#Save as file as CSV
 df.to_csv(path, encoding='utf-8-sig')
 
