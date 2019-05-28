@@ -69,7 +69,7 @@ df['2010 CENSUS'] = df['2010 CENSUS'].str.replace(r"\D+", '', regex=True).astype
 df.rename(columns={'2016 POPULATION DENSITY':'2016 POPULATION DENSITY PER SQ MI', '2016 LAND AREA':'2016 LAND AREA SQ MI'}, inplace = True)
 
 #Directory for the output file
-path = str(input("Enter the directory, for example: /users/username/Desktop/filename.csv"))
+path = str(input("Enter the directory, for example: /users/username/Desktop/filename.csv "))
 
 #Save as file as CSV
 df.to_csv(path, encoding='utf-8-sig')
