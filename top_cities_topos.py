@@ -45,7 +45,6 @@ b = [x for x in b if "km2" not in x]
 
 #Drop square brackets with characters inside, that appear in few rows
 b = [re.sub(r"\[\w+\]","",x) for x in b]
-#b = [re.sub(r"\D+\B\D","",x) for x in b]
 
 #Merge two lists, and repeating the short one several times to create list of tuple pairs
 c = list(zip(cycle(a), b))
